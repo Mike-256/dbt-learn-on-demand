@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Stage customer description
+    columns: 
+      - name: customer_id
+        description: '{{doc ("cust_desc")}}'
+        tests:
+          - unique
+          - not_null
